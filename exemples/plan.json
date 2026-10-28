@@ -1,0 +1,6 @@
+{"effets": [
+  {"effet": "verrouille", "debut": 0.0, "fin": 1.8, "texte": "IDRISS"},
+  {"effet": "orbite", "debut": 2.0, "fin": 4.5},
+  {"effet": "mot-geant", "debut": 5.0, "fin": 7.0, "texte": "KARATOU"},
+  {"effet": "commentaire", "debut": 8.0, "fin": 10.5, "texte": "EFFETS"}
+]}

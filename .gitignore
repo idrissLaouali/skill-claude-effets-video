@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+*_effets.mp4
+*_mots.json
+verif*.png
+.DS_Store
