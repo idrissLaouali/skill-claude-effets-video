@@ -8,6 +8,10 @@ Les effets repèrent ton visage et te détourent image par image, pour que le te
 
 Par Idriss Laouali, co-fondateur de [Karatou Academy](https://karatou.academy). L'IA appliquée aux défis du monde réel.
 
+**Le guide complet, avec chaque effet en image : https://karatou.academy/blog/effets-video-claude**
+
+![Les effets](docs/apercu.jpg)
+
 ## Installer
 
 Dans Claude Code (ou Cowork), colle :

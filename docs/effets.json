@@ -1,0 +1,626 @@
+[
+ {
+  "nom": "verrouille",
+  "anglais": "locked-on",
+  "famille": "Caméra et lumière",
+  "description": "Des crochets se verrouillent sur ton visage et la caméra te suit",
+  "options": [
+   "texte",
+   "zoom"
+  ],
+  "quand": "Pour te présenter ou ouvrir une vidéo sur toi.",
+  "exemple": "/effets verrouille sur les 2 premières secondes, texte IDRISS"
+ },
+ {
+  "nom": "plongee",
+  "anglais": "lean-in",
+  "famille": "Caméra et lumière",
+  "description": "Un zoom rapide sur un mot, pour appuyer une phrase",
+  "options": [
+   "vitesse",
+   "zoom"
+  ],
+  "quand": "Pour appuyer un mot fort, une chute, un chiffre.",
+  "exemple": "/effets plongee quand je dis « gratuit »"
+ },
+ {
+  "nom": "poussee-lente",
+  "anglais": "slow-push",
+  "famille": "Caméra et lumière",
+  "description": "Une poussée cinéma lente vers ton visage, la pièce devient floue",
+  "options": [
+   "flou",
+   "zoom"
+  ],
+  "quand": "Pour un moment sérieux ou émouvant.",
+  "exemple": "/effets poussee-lente sur la dernière phrase"
+ },
+ {
+  "nom": "projecteur",
+  "anglais": "spotlight",
+  "famille": "Caméra et lumière",
+  "description": "Les lumières s'éteignent, toi tu restes éclairé (look=paillettes pour la version dorée)",
+  "options": [
+   "couleur",
+   "look",
+   "police",
+   "pousse",
+   "texte"
+  ],
+  "quand": "Pour une révélation. En version paillettes, pour une annonce.",
+  "exemple": "/effets projecteur look=paillettes, texte LANCEMENT"
+ },
+ {
+  "nom": "ambiance",
+  "anglais": "moody",
+  "famille": "Caméra et lumière",
+  "description": "Un étalonnage cinéma : plus sombre, plus doux (look=sombre, nb, chaud, froid, vif)",
+  "options": [
+   "look"
+  ],
+  "quand": "Pour changer l'humeur d'un passage (noir et blanc, chaud, froid).",
+  "exemple": "/effets ambiance look=nb de 5 à 8 s"
+ },
+ {
+  "nom": "avant-apres",
+  "anglais": "swipe",
+  "famille": "Caméra et lumière",
+  "description": "Un curseur avant / après balaie l'image",
+  "options": [
+   "apres",
+   "avant",
+   "look"
+  ],
+  "quand": "Pour montrer une transformation.",
+  "exemple": "/effets avant-apres de 3 à 6 s"
+ },
+ {
+  "nom": "tunnel",
+  "anglais": "rabbit-hole",
+  "famille": "Caméra et lumière",
+  "description": "L'image s'enfonce dans elle-même en tournant, toi tu restes devant",
+  "options": [
+   "ratio",
+   "rotation",
+   "vitesse"
+  ],
+  "quand": "Pour une transition « on plonge dans le sujet ».",
+  "exemple": "/effets tunnel quand je dis « on rentre dans le détail »"
+ },
+ {
+  "nom": "points",
+  "anglais": "dot-reveal",
+  "famille": "Caméra et lumière",
+  "description": "L'image se construit en points lumineux, puis devient nette",
+  "options": [
+   "cellule",
+   "couleur",
+   "fond"
+  ],
+  "quand": "Pour une ouverture technologique, façon écran qui s'allume.",
+  "exemple": "/effets points au début"
+ },
+ {
+  "nom": "pause-fleche",
+  "anglais": "pause-point",
+  "famille": "Caméra et lumière",
+  "description": "Arrêt sur image, une flèche dessinée à la main pointe vers toi",
+  "options": [
+   "couleur",
+   "texte",
+   "x_texte"
+  ],
+  "quand": "Pour te désigner : « ce mec-là, c'est moi ».",
+  "exemple": "/effets pause-fleche, texte « moi il y a un an »"
+ },
+ {
+  "nom": "desinstallation",
+  "anglais": "uninstall",
+  "famille": "Caméra et lumière",
+  "description": "Une barre de désinstallation glitchée qui casse l'image",
+  "options": [
+   "texte"
+  ],
+  "quand": "Pour une vidéo « j'ai supprimé cette appli ».",
+  "exemple": "/effets desinstallation, texte « Désinstallation de CapCut... »"
+ },
+ {
+  "nom": "cadre-reel",
+  "anglais": "reel-frame",
+  "famille": "Caméra et lumière",
+  "description": "Ta vidéo rétrécit dans une carte de reel Instagram",
+  "options": [
+   "texte"
+  ],
+  "quand": "Pour montrer que c'est un reel, ou parler de tes vidéos.",
+  "exemple": "/effets cadre-reel, texte @tonpseudo"
+ },
+ {
+  "nom": "widgets-verre",
+  "anglais": "glass-widgets",
+  "famille": "Verre liquide",
+  "description": "Des widgets en verre et des mini-pages flottent autour de ta tête, avec « Monté par Claude »",
+  "options": [
+   "compte",
+   "date",
+   "evenement",
+   "jour",
+   "look",
+   "nom",
+   "pastille",
+   "piste",
+   "sombre",
+   "sous",
+   "texte",
+   "titre",
+   "vues"
+  ],
+  "quand": "Pour un look « tableau de bord » moderne autour de toi.",
+  "exemple": "/effets widgets-verre, texte 45"
+ },
+ {
+  "nom": "graphique-verre",
+  "anglais": "liquid-glass-graph",
+  "famille": "Verre liquide",
+  "description": "Une carte en verre liquide sous ton menton : la courbe monte et le chiffre défile (look=bento pour la version tableau de bord)",
+  "options": [
+   "a",
+   "anneau",
+   "barres",
+   "couleur",
+   "de",
+   "kpi",
+   "look",
+   "texte"
+  ],
+  "quand": "Pour un chiffre qui monte : vues, abonnés, revenus.",
+  "exemple": "/effets graphique-verre, de 0 à 161K, texte Vues"
+ },
+ {
+  "nom": "zoom-epaule",
+  "anglais": "over-the-shoulder-zoom",
+  "famille": "Verre liquide",
+  "description": "La caméra plonge dans un coin, un graphique en verre apparaît près de ta tête, puis l'autre coin avec un second graphique",
+  "options": [
+   "a",
+   "texte",
+   "zoom"
+  ],
+  "quand": "Pour comparer deux chiffres liés.",
+  "exemple": "/effets zoom-epaule, texte Vues|Abonnés, a 161K|2K"
+ },
+ {
+  "nom": "messages",
+  "anglais": "imessage",
+  "famille": "Verre liquide",
+  "description": "Des notifications de messages apparaissent une à une, en verre crème avec un halo doux",
+  "options": [
+   "texte",
+   "titre",
+   "y"
+  ],
+  "quand": "Pour montrer ce qu'on te demande en message.",
+  "exemple": "/effets messages, texte « tu as monté ça comment ? »|« envoie le lien »"
+ },
+ {
+  "nom": "taches-claude",
+  "anglais": "checklist",
+  "famille": "Verre liquide",
+  "description": "Une liste de tâches Claude sous ton menton : chaque étape tourne, puis se coche en vert",
+  "options": [
+   "texte",
+   "titre"
+  ],
+  "quand": "Pour montrer ce que Claude fait étape par étape.",
+  "exemple": "/effets taches-claude"
+ },
+ {
+  "nom": "interrupteurs",
+  "anglais": "apple-toggles",
+  "famille": "Verre liquide",
+  "description": "Une carte de réglages iPhone au-dessus de toi : les interrupteurs s'allument un par un",
+  "options": [
+   "chevauche",
+   "couleur",
+   "moments",
+   "pos",
+   "texte",
+   "ticks",
+   "zoom"
+  ],
+  "quand": "Pour lister 3 réglages ou 3 promesses.",
+  "exemple": "/effets interrupteurs, texte Gratuit|En français|Sans logiciel"
+ },
+ {
+  "nom": "mot-geant",
+  "anglais": "backdrop-word",
+  "famille": "Mots et titres",
+  "description": "Un mot géant tombe derrière toi",
+  "options": [
+   "couleur",
+   "police",
+   "texte"
+  ],
+  "quand": "Pour poser le mot clé de ta vidéo derrière toi.",
+  "exemple": "/effets mot-geant, texte KARATOU"
+ },
+ {
+  "nom": "ticket",
+  "anglais": "the-bill",
+  "famille": "Mots et titres",
+  "description": "Tes consignes s'impriment comme un ticket de caisse, dans le mur au-dessus de ta tête",
+  "options": [
+   "texte"
+  ],
+  "quand": "Pour montrer une consigne, un prompt ou une commande.",
+  "exemple": "/effets ticket, texte « 1x orbite »|« 1x projecteur »"
+ },
+ {
+  "nom": "tampon",
+  "anglais": "reject-stamp",
+  "famille": "Mots et titres",
+  "description": "Un gros tampon rouge s'écrase sur l'image",
+  "options": [
+   "angle",
+   "couleur",
+   "texte",
+   "y"
+  ],
+  "quand": "Pour rejeter une idée reçue.",
+  "exemple": "/effets tampon, texte FAUX"
+ },
+ {
+  "nom": "compte-a-rebours",
+  "anglais": "countdown-flip",
+  "famille": "Mots et titres",
+  "description": "Une horloge à volets 3, 2, 1 au-dessus de ta tête",
+  "options": [
+   "depuis"
+  ],
+  "quand": "Pour créer l'attente avant une révélation.",
+  "exemple": "/effets compte-a-rebours juste avant la fin"
+ },
+ {
+  "nom": "couverture",
+  "anglais": "cover-star",
+  "famille": "Mots et titres",
+  "description": "Tu deviens la couverture d'un magazine, le titre derrière ta tête (look=editorial pour la version classique)",
+  "options": [
+   "accent",
+   "couleur",
+   "droite",
+   "droite_y",
+   "lignes",
+   "lignes_y",
+   "look",
+   "numero",
+   "texte"
+  ],
+  "quand": "Pour un look magazine, une vidéo « portrait ».",
+  "exemple": "/effets couverture, texte IDRISS"
+ },
+ {
+  "nom": "griffonnage",
+  "anglais": "scribble",
+  "famille": "Mots et titres",
+  "description": "Des dessins au feutre se tracent tout seuls autour de toi",
+  "options": [
+   "couleur",
+   "texte"
+  ],
+  "quand": "Pour un ton léger, fait main.",
+  "exemple": "/effets griffonnage, texte moi"
+ },
+ {
+  "nom": "collage-rouge",
+  "anglais": "red-collage",
+  "famille": "Mots et titres",
+  "description": "Toi en noir et blanc, un mot rouge géant derrière, trois lignes qui claquent",
+  "options": [
+   "couleur",
+   "etiquette",
+   "lignes",
+   "texte"
+  ],
+  "quand": "Pour une phrase choc en trois lignes.",
+  "exemple": "/effets collage-rouge, texte MONTAGE"
+ },
+ {
+  "nom": "titre-partage",
+  "anglais": "split-headline",
+  "famille": "Mots et titres",
+  "description": "Un bandeau titre descend et te pousse dans la moitié basse de l'image",
+  "options": [
+   "couleur",
+   "fort",
+   "hauteur",
+   "pastille",
+   "pousse",
+   "texte"
+  ],
+  "quand": "Pour titrer ta vidéo comme un article.",
+  "exemple": "/effets titre-partage, texte Claude|monte|mes reels"
+ },
+ {
+  "nom": "mot-pastel",
+  "anglais": "pastel-word",
+  "famille": "Mots et titres",
+  "description": "Fond lavande, un mot géant derrière toi et une carte de profil qu'on suit",
+  "options": [
+   "compte",
+   "nom",
+   "role",
+   "texte"
+  ],
+  "quand": "Pour un ton doux et créatif, avec ta carte de profil.",
+  "exemple": "/effets mot-pastel, texte REELS"
+ },
+ {
+  "nom": "titre-encadre",
+  "anglais": "headline-box",
+  "famille": "Mots et titres",
+  "description": "Un zoom avec un titre sur deux lignes, la seconde dans un cadre blanc",
+  "options": [
+   "texte",
+   "zoom"
+  ],
+  "quand": "Pour annoncer le sujet en deux lignes.",
+  "exemple": "/effets titre-encadre, texte Comment Claude|monte mes reels"
+ },
+ {
+  "nom": "mur-titres",
+  "anglais": "headline-wall",
+  "famille": "Mots et titres",
+  "description": "Tes propres titres de reels s'empilent derrière ta tête, puis ton total de vues apparaît devant",
+  "options": [
+   "compte",
+   "ecart",
+   "libelle",
+   "nombre",
+   "texte",
+   "total"
+  ],
+  "quand": "Pour montrer tes vidéos qui ont marché.",
+  "exemple": "/effets mur-titres"
+ },
+ {
+  "nom": "raccord",
+  "anglais": "match-cut",
+  "famille": "Mots et titres",
+  "description": "Des pages de journaux défilent en coupant sur un seul mot, figé derrière ta tête",
+  "options": [
+   "couleur",
+   "texte"
+  ],
+  "quand": "Pour un sujet d'actualité : « tout le monde en parle ».",
+  "exemple": "/effets raccord, texte Claude"
+ },
+ {
+  "nom": "enseigne",
+  "anglais": "led-sign",
+  "famille": "Mots et titres",
+  "description": "La lumière baisse et une enseigne LED s'écrit derrière toi",
+  "options": [
+   "couleur",
+   "pousse",
+   "texte"
+  ],
+  "quand": "Pour un mot lumineux, ambiance soirée ou événement.",
+  "exemple": "/effets enseigne, texte KARATOU"
+ },
+ {
+  "nom": "classement",
+  "anglais": "tier-list",
+  "famille": "Mots et titres",
+  "description": "Un classement S à F tombe devant toi et Claude file tout en haut",
+  "options": [
+   "autres",
+   "element",
+   "titre"
+  ],
+  "quand": "Pour classer des outils ou des méthodes.",
+  "exemple": "/effets classement, titre « meilleur outil de montage ? »"
+ },
+ {
+  "nom": "a-faire",
+  "anglais": "todo",
+  "famille": "Mots et titres",
+  "description": "Une liste à faire à côté de ta tête, cochée au fil de tes mots",
+  "options": [
+   "moments",
+   "texte",
+   "ticks",
+   "titre"
+  ],
+  "quand": "Pour une mini-liste qui se coche pendant que tu parles.",
+  "exemple": "/effets a-faire, texte installe|glisse ta vidéo|tape /effets"
+ },
+ {
+  "nom": "alignement",
+  "anglais": "lineup",
+  "famille": "Mots et titres",
+  "description": "Des tuiles numérotées s'ouvrent en éventail au-dessus de ta tête",
+  "options": [
+   "texte"
+  ],
+  "quand": "Pour annoncer une liste numérotée (top 10, 7 outils).",
+  "exemple": "/effets alignement"
+ },
+ {
+  "nom": "avalanche",
+  "anglais": "noise",
+  "famille": "Tes reels",
+  "description": "Tes reels s'empilent derrière ta tête, un tous les quarts de seconde",
+  "options": [
+   "taille",
+   "images"
+  ],
+  "quand": "Pour montrer la quantité : « j'ai publié 100 vidéos ».",
+  "exemple": "/effets avalanche, images=mon_dossier"
+ },
+ {
+  "nom": "orbite",
+  "anglais": "orbit",
+  "famille": "Tes reels",
+  "description": "Tes reels tournent autour de ta tête : devant en bas, derrière en haut",
+  "options": [
+   "nombre",
+   "taille",
+   "vitesse",
+   "images"
+  ],
+  "quand": "Pour montrer tes contenus ou tes projets autour de toi.",
+  "exemple": "/effets orbite, images=mes_reels"
+ },
+ {
+  "nom": "carrousel",
+  "anglais": "carousel-spin",
+  "famille": "Tes reels",
+  "description": "Tes reels tournent autour de toi en carrousel 3D, puis ralentissent",
+  "options": [
+   "nombre",
+   "taille",
+   "tours",
+   "images"
+  ],
+  "quand": "Pour une galerie spectaculaire de tes vidéos.",
+  "exemple": "/effets carrousel"
+ },
+ {
+  "nom": "eventail-telephones",
+  "anglais": "phone-fan",
+  "famille": "Tes reels",
+  "description": "Tes reels s'ouvrent comme un jeu de cartes de téléphones, sous un titre",
+  "options": [
+   "images",
+   "texte"
+  ],
+  "quand": "Pour présenter tes reels sous un titre.",
+  "exemple": "/effets eventail-telephones, texte 45 effets.|zéro logiciel."
+ },
+ {
+  "nom": "broll-partage",
+  "anglais": "broll-split",
+  "famille": "Tes reels",
+  "description": "Écran partagé : un B-roll en haut avec une étiquette, toi en bas",
+  "options": [
+   "choix",
+   "texte",
+   "images"
+  ],
+  "quand": "Pour illustrer ce que tu dis avec une image en haut.",
+  "exemple": "/effets broll-partage, texte « 4 h → 4 min »"
+ },
+ {
+  "nom": "pastilles",
+  "anglais": "check-pills",
+  "famille": "Tes reels",
+  "description": "Pièce en papier quadrillé, tes reels épinglés derrière toi, un curseur clique des pastilles bleues",
+  "options": [
+   "compte",
+   "tableau",
+   "texte",
+   "images"
+  ],
+  "quand": "Pour un look « espace de travail » avec des étapes cochées.",
+  "exemple": "/effets pastilles, texte Accroche|Sous-titres|B-roll"
+ },
+ {
+  "nom": "pluie-touches",
+  "anglais": "shortcut-rain",
+  "famille": "Tes reels",
+  "description": "Des touches de clavier tombent en pluie derrière toi",
+  "options": [
+   "nombre",
+   "texte",
+   "images"
+  ],
+  "quand": "Pour parler de raccourcis, de clavier, de code.",
+  "exemple": "/effets pluie-touches"
+ },
+ {
+  "nom": "mur-profil",
+  "anglais": "profile-wall",
+  "famille": "Tes reels",
+  "description": "Ta grille de profil remplit le mur derrière toi pendant qu'un compteur défile",
+  "options": [
+   "libelle",
+   "nom",
+   "nombre",
+   "sous",
+   "images"
+  ],
+  "quand": "Pour montrer ton profil et ton meilleur chiffre.",
+  "exemple": "/effets mur-profil, nombre 161000"
+ },
+ {
+  "nom": "grille-profil",
+  "anglais": "place-in-grid",
+  "famille": "Tes reels",
+  "description": "Tu rétrécis au centre de ta grille 3x3, tes reels apparaissent autour avec leurs vues",
+  "options": [
+   "images",
+   "vues"
+  ],
+  "quand": "Pour une fin « retrouve-moi sur mon profil ».",
+  "exemple": "/effets grille-profil, vues 161K|58K|..."
+ },
+ {
+  "nom": "commentaire",
+  "anglais": "comment-box",
+  "famille": "Interface",
+  "description": "Une fenêtre de commentaires Instagram au-dessus de ta tête : ton mot s'écrit, se publie, reçoit un cœur et ta réponse (look=barre pour la version simple)",
+  "options": [
+   "compte",
+   "look",
+   "puce",
+   "reponse",
+   "texte"
+  ],
+  "quand": "Pour ton appel à l'action : « commente le mot ».",
+  "exemple": "/effets commentaire, texte EFFETS"
+ },
+ {
+  "nom": "abonnement",
+  "anglais": "tap",
+  "famille": "Interface",
+  "description": "Un bouton « S'abonner » apparaît et passe à « Abonné »",
+  "options": [
+   "a",
+   "couleur",
+   "x",
+   "y"
+  ],
+  "quand": "Pour demander l'abonnement sans le dire.",
+  "exemple": "/effets abonnement à la fin"
+ },
+ {
+  "nom": "timeline",
+  "anglais": "auto-edit",
+  "famille": "Interface",
+  "description": "Un look cinéma rouge sombre avec une timeline de montage, un compteur REC et une tête de lecture lumineuse",
+  "options": [
+   "couleur",
+   "sous",
+   "texte"
+  ],
+  "quand": "Pour parler de montage, ou d'un process automatisé.",
+  "exemple": "/effets timeline, texte MONTAGE AUTO"
+ },
+ {
+  "nom": "sous-titres",
+  "anglais": "captions",
+  "famille": "Bonus",
+  "description": "Bonus : sous-titres mot par mot en français, le mot prononcé s'allume en or (mots=fichier de transcrire.py)",
+  "options": [
+   "casse",
+   "couleur",
+   "mots",
+   "paquet",
+   "taille",
+   "y"
+  ],
+  "quand": "Pour sous-titrer toute ta vidéo, mot par mot, en français.",
+  "exemple": "/effets sous-titres sur toute la vidéo"
+ }
+]
