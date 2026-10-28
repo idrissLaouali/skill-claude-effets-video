@@ -1,4 +1,4 @@
-# Effets vidéo pour Claude, en français
+# Skill Claude : 45 effets vidéo en français
 
 **Un seul clip. 45 effets. Zéro logiciel de montage.**
 
@@ -8,7 +8,7 @@ Les effets repèrent ton visage et te détourent image par image, pour que le te
 
 Par Idriss Laouali, co-fondateur de [Karatou Academy](https://karatou.academy). L'IA appliquée aux défis du monde réel.
 
-**Le guide complet, avec chaque effet en image : https://karatou.academy/blog/effets-video-claude**
+**Le guide complet, avec chaque effet en image : https://karatou.academy/blog/skill-claude-effets-video**
 
 ![Les effets](docs/apercu.jpg)
 
@@ -17,7 +17,7 @@ Par Idriss Laouali, co-fondateur de [Karatou Academy](https://karatou.academy). 
 Dans Claude Code (ou Cowork), colle :
 
 ```
-git clone https://github.com/idrissLaouali/effets-video ~/.claude/skills/effets
+git clone https://github.com/idrissLaouali/skill-claude-effets-video ~/.claude/skills/effets
 ```
 
 Puis dans Claude : `/effets` et glisse ta vidéo. La première fois, Claude installe tout seul ce qu'il faut (Python, ffmpeg, 1 à 3 minutes).
