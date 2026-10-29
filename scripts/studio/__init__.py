@@ -28,4 +28,4 @@ class Effet:
 
 
 def charger_tout():
-    from . import camera, mots, cartes, interface, verre  # noqa: F401  (enregistrent leurs effets)
+    from . import camera, mots, cartes, interface, verre, karatou  # noqa: F401  (enregistrent leurs effets)

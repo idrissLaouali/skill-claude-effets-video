@@ -622,5 +622,47 @@
   ],
   "quand": "Pour sous-titrer toute ta vidéo, mot par mot, en français.",
   "exemple": "/effets sous-titres sur toute la vidéo"
+ },
+ {
+  "nom": "pixelisation",
+  "anglais": "pixel",
+  "famille": "Karatou",
+  "description": "L'image se casse en gros pixels puis se reforme, comme une transition de jeu vidéo",
+  "options": [
+   "taille",
+   "toi",
+   "grille"
+  ],
+  "quand": "Pour passer d'une idée à l'autre, ou cacher puis révéler.",
+  "exemple": "/effets pixelisation de 4 à 5 s"
+ },
+ {
+  "nom": "ecran-partage",
+  "anglais": "split",
+  "famille": "Karatou",
+  "description": "Notre écran partagé : le contenu en haut (image ou vidéo), ton visage recadré en bas, une ligne or et un titre sur la jonction",
+  "options": [
+   "haut",
+   "texte",
+   "hauteur",
+   "zoom",
+   "couleur",
+   "images",
+   "choix"
+  ],
+  "quand": "Pour montrer une démo, un site ou un B-roll pendant que tu expliques.",
+  "exemple": "/effets ecran-partage de 3 à 9 s, haut=demo.mp4, texte La cuisine de l'IA"
+ },
+ {
+  "nom": "toupie",
+  "anglais": "spin",
+  "famille": "Karatou",
+  "description": "L'image tourne sur elle-même avec un flou de vitesse, puis se pose",
+  "options": [
+   "tours",
+   "sens"
+  ],
+  "quand": "Pour une transition énergique entre deux parties.",
+  "exemple": "/effets toupie de 6 à 6,8 s"
  }
 ]

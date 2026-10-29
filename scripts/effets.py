@@ -45,13 +45,18 @@ def main():
     ap.add_argument('--apercu', help='secondes séparées par des virgules : enregistre des PNG au lieu de la vidéo')
     ap.add_argument('--largeur', type=int, default=1080, help='petit côté de la sortie (1080 par défaut, 2160 pour la 4K)')
     ap.add_argument('--liste', action='store_true')
+    ap.add_argument('--son', action='store_true', help='ajoute la bande son Karatou (drops, suspense, bruitages) sous ta voix')
+    ap.add_argument('--hook', type=float, help='avec --son : seconde du drop d\'ouverture (suspense avant)')
     a = ap.parse_args()
     if a.liste:
         for i, (k, (_, d)) in enumerate(EFFETS.items()): print(f'{i + 1:2d}. {k:22s} {d}')
         return
     if a.plan:
         src, dst = a.args[0], a.args[1]
-        plan = json.load(open(a.plan)); plan = plan.get('effets', plan.get('effects', plan)) if isinstance(plan, dict) else plan
+        brut = json.load(open(a.plan)); plan = brut.get('effets', brut.get('effects', brut)) if isinstance(brut, dict) else brut
+        if isinstance(brut, dict):
+            a.son = a.son or bool(brut.get('son', brut.get('sound', False)))
+            if a.hook is None and brut.get('hook') is not None: a.hook = float(brut['hook'])
         plan = [normaliser(d) for d in plan]
     else:
         nom, src, dst = a.args[0], a.args[1], a.args[2]
@@ -119,7 +124,18 @@ def main():
         else:
             enc.stdin.write(im.tobytes())
             if i % int(fps * 5) == 0: print(f'  {t:5.1f} s / {duree:.1f} s', flush=True)
-    if enc: enc.stdin.close(); enc.wait(); print('Terminé :', dst)
+    if enc:
+        enc.stdin.close(); enc.wait()
+        if a.son:
+            from studio import son
+            print('Étape 3 : la bande son...', flush=True)
+            piste = son.bande_son([{'nom': f.nom, 'debut': f.debut, 'fin': f.fin} for f in fx], duree, son.lire_audio(src, duree), a.hook)
+            tmp_wav, tmp_mp4 = dst + '.son.wav', dst + '.tmp.mp4'
+            son.ecrire_wav(tmp_wav, piste)
+            subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', dst, '-i', tmp_wav, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac',
+                            '-b:a', '192k', '-shortest', '-movflags', '+faststart', tmp_mp4], check=True)
+            os.replace(tmp_mp4, dst); os.remove(tmp_wav)
+        print('Terminé :', dst)
     suivi.decoupe.close()
 
 

@@ -44,7 +44,7 @@ bash scripts/installer.sh
 ]}
 ```
 
-## Les 45 effets (+ sous-titres en bonus)
+## Les 45 effets, la famille Karatou et les bonus
 
 La liste complète, avec les options, est dans [SKILL.md](SKILL.md). Chaque effet a un nom français et répond aussi à son nom anglais.
 
@@ -55,7 +55,8 @@ La liste complète, avec les options, est dans [SKILL.md](SKILL.md). Chaque effe
 | Mots et titres | mot-geant, ticket, tampon, compte-a-rebours, couverture, griffonnage, collage-rouge, titre-partage, mot-pastel, titre-encadre, mur-titres, raccord, enseigne, classement, a-faire, alignement |
 | Tes reels | avalanche, orbite, carrousel, eventail-telephones, broll-partage, pastilles, pluie-touches, mur-profil, grille-profil |
 | Interface | commentaire, abonnement, timeline |
-| Bonus | sous-titres (mot par mot, en français, avec `scripts/transcrire.py`) |
+| Karatou | pixelisation, toupie, ecran-partage |
+| Bonus | sous-titres (mot par mot, en français, avec `scripts/transcrire.py`) et bande son (`--son`, `--hook`) |
 
 ## Ce qu'il y a dedans
 

@@ -90,6 +90,9 @@ Les listes s'écrivent avec `|` (ex. `texte=Un|Deux|Trois`). Les couleurs en hex
 | 44 | `abonnement` | Un bouton « S'abonner » apparaît et passe à « Abonné » | `a`, `couleur`, `x`, `y` | `tap` |
 | 45 | `timeline` | Un look cinéma rouge sombre avec une timeline de montage, un compteur REC et une tête de lecture lumineuse | `couleur`, `sous`, `texte` | `auto-edit` |
 | 46 | `sous-titres` | Bonus : sous-titres mot par mot en français, le mot prononcé s'allume en or (mots=fichier de transcrire.py) | `casse`, `couleur`, `mots`, `paquet`, `taille`, `y` | `captions` |
+| 47 | `pixelisation` | Karatou : l'image se casse en gros pixels puis se reforme (transition) | `taille`, `toi` (oui = tu restes net), `grille` | `pixel` |
+| 48 | `toupie` | Karatou : l'image tourne sur elle-même avec un flou de vitesse, puis se pose (transition) | `tours`, `sens` | `spin` |
+| 49 | `ecran-partage` | Karatou : contenu en haut (image ou vidéo), ton visage recadré en bas, ligne or et titre sur la jonction | `haut` (fichier image ou vidéo), `texte`, `hauteur`, `zoom`, `couleur` | `split` |
 
 **Looks** (même effet, autre style, ne comptent pas dans les 45) :
 - `projecteur` avec `look=paillettes` : la pièce s'éteint, des rayons dorés derrière ta tête, un grand mot doré qui brille.
@@ -98,6 +101,10 @@ Les listes s'écrivent avec `|` (ex. `texte=Un|Deux|Trois`). Les couleurs en hex
 - `commentaire` avec `look=barre` : la simple barre de commentaire qui tape le mot et le publie.
 
 **Bonus Karatou** : `sous-titres` avec `mots=<video>_mots.json` (de `transcrire.py`). Mot par mot, en majuscules, le mot prononcé s'allume en or. Options : `couleur`, `y` (0 à 1, défaut 0,74), `paquet` (mots par ligne, défaut 3), `taille`, `casse=normale`.
+
+**Famille Karatou** (nos effets à nous) : `pixelisation` et `toupie` sont des transitions courtes (0,6 à 1 s). `ecran-partage` tient plusieurs secondes ; pour des sous-titres sur la jonction, ajoute `sous-titres` avec `y=0.5`.
+
+**Bande son Karatou** : ajoute `--son` au rendu (ou `"son": true` dans le plan). Musique et bruitages synthétisés, libres de droits, calés sur le plan : avant chaque effet le beat s'arrête (suspense, riser), puis DROP (impact + basse) sur l'effet, un beat trap jusqu'à l'effet suivant, et un son propre à chaque effet. Ta voix reste devant : la musique baisse quand tu parles. Avec `--hook 2.1` (ou `"hook": 2.1`), les premières secondes deviennent un hook sonore (cœur, tic-tac, montée) qui explose à 2,1 s. Exemple : `{"son": true, "hook": 2.1, "effets": [...]}`.
 
 ## Règles
 - Ne couvre jamais le visage. Tout passe derrière la personne ou évite le visage tout seul ; si une image de vérification montre du texte sur le visage, déplace-le (`x`, `y`) ou raccourcis le texte.
